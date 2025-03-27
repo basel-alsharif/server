@@ -1,8 +1,5 @@
-import axios from 'axios';
-import config from '../config';
 import { Bug } from '../models';
 import { IGetAllBugs, Bug as BugType } from '../types';
-import { templateErrors } from '../helpers';
 
 const getAllBugs = async ({ status, priority, assignedTo }:IGetAllBugs) => {
   const whereCondition = {
